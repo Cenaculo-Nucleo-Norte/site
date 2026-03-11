@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #c0222e;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    
+    background-color: #f9f9f9; 
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 10px 15px -10px rgba(0,0,0,0.05);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.link {
+    display: inline-flex;   
+    align-items: center;
+    justify-content: flex-start;
+    width: 55px;           
+    height: 55px;          
+    background: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.link i {
+    font-size: 22px;
+    width: 55px;           
+    min-width: 55px;      
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.link span {
+    opacity: 0;
+    font-weight: 600;
+    margin-left: 0;        
+    transition: all 0.4s ease;
+    padding-right: 25px;   
+}
+
+.link.insta:hover {
+    width: 185px;         
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.link.email:hover {
+    width: 135px;         
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.link:hover span {
+    opacity: 1;
+    margin-left: 5px;    
+}
+
+.footer-text {
+    font-size: 13px;
+    color: #888;
+    margin-top: 10px;
+}
