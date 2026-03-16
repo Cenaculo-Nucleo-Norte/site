@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-    link.addEventListener('click', e => {
-        e.preventDefault();
-        const page = link.getAttribute('href');
-        loadPage(page);
-        history.pushState({}, "", page);
-    });
+    const path = window.location.pathname;
+    const page = path.split("/").pop();
 
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.classList.remove('active');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (page === "" || page === "index.html") {
+            if (href === "index.html" || href === "/") {
+                link.classList.add('active');
+            }
+        } 
+        else if (page === href) {
+            link.classList.add('active');
+        }
     });
-    
-    link.classList.add('active');
 
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
