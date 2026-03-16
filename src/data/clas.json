@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    { "id": "0093", "label": "0093", "title": "São Tomé de Negrelos", "group": "clas", "email": "geral.93@escutismo.pt" },
+    { "id": "0094", "label": "0094", "title": "Trofa", "group": "clas", "email": "geral.94@escutismo.pt" },
+    { "id": "0245", "label": "0245", "title": "Vilarinho", "group": "clas", "email": "geral.245@escutismo.pt" },
+    { "id": "0399", "label": "0399", "title": "Rebordões", "group": "clas", "email": "geral.399@escutismo.pt" },
+    { "id": "0400", "label": "0400", "title": "Burgães", "group": "clas", "email": "geral.400@escutismo.pt" },
+    { "id": "0435", "label": "0435", "title": "Santa Eulália", "group": "clas", "email": "geral.435@escutismo.pt" },
+    { "id": "0447", "label": "0447", "title": "Santiago de Bougado", "group": "clas", "email": "geral.447@escutismo.pt" },
+    { "id": "0502", "label": "0502", "title": "Roriz", "group": "clas", "email": "geral.502@escutismo.pt" },
+    { "id": "0503", "label": "0503", "title": "Fontiscos", "group": "clas", "email": "geral.503@escutismo.pt" },
+    { "id": "0599", "label": "0599", "title": "Santo Adrião de Vizela", "group": "clas", "email": "geral.599@escutismo.pt" },
+    { "id": "0628", "label": "0628", "title": "Santo Tirso", "group": "clas", "email": "geral.628@escutismo.pt" },
+    { "id": "0635", "label": "0635", "title": "São Romão Coronado", "group": "clas", "email": "geral.635@escutismo.pt" },
+    { "id": "0842", "label": "0842", "title": "São Martinho Campo", "group": "clas", "email": "geral.842@escutismo.pt" },
+    { "id": "1154", "label": "1154", "title": "Lustosa", "group": "clas", "email": "geral.1154@escutismo.pt" },
+    { "id": "1283", "label": "1283", "title": "Alvarelhos", "group": "clas", "email": "geral.1283@escutismo.pt" }
+  ]
+}
