@@ -32,12 +32,19 @@ body {
     transition: all 0.3s ease;
 }
 
-.container {
+.navbar .container {
     margin: 0 auto;
     height: var(--nav-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
+    max-width: 1400px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
     padding: 0 1rem;
 }
 
