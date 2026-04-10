@@ -4,6 +4,17 @@
     --nav-height: 80px;
 }
 
+html {
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased; 
@@ -29,7 +40,11 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1.5px solid var(--primary-color);
-    transition: all 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .container {
@@ -67,6 +82,8 @@ body {
 .nav-links {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
 }
 
