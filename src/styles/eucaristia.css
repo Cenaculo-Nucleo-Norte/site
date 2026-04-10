@@ -1,0 +1,121 @@
+/* ===== ESTILO AESTHETIC - MÚSICAS EUCARISTIA ===== */
+
+#musicas {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.eucaristia-content {
+    max-width: 850px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.eucaristia-content h2 {
+    text-align: center;
+    color: var(--text-dark);
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    letter-spacing: -1px;
+    position: relative;
+}
+
+/* Linha decorativa debaixo do título principal */
+.eucaristia-content h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* Contentor de cada momento da missa */
+.momento {
+    background: #fff;
+    margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.momento:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos dos momentos (Cântico Inicial, Ofertório, etc) */
+.momento h3 {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Bolinha decorativa antes do título */
+.momento h3::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* Estilo do texto da letra */
+.momento p {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Estilo especial para o Refrão */
+.refrao {
+    background-color: #fff8f8; /* Um tom de vermelho quase branco */
+    padding: 20px 25px;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px 12px 12px 4px;
+    font-weight: 500;
+    color: #1a1a1a !important;
+    font-style: italic;
+    margin: 20px 0 !important;
+}
+
+/* Linha divisória para momentos com dois cânticos */
+.momento hr {
+    border: none;
+    border-top: 1px dashed #ddd;
+    margin: 25px 0;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .eucaristia-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .momento {
+        padding: 20px;
+    }
+    
+    .momento p {
+        font-size: 0.95rem;
+    }
+}
