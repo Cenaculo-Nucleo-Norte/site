@@ -13,10 +13,6 @@ body {
     margin: 0;
 }
 
-main {
-    flex: 1 0 auto;
-}
-
 .clans {
     color: white;
     background: var(--primary-color);
@@ -25,8 +21,11 @@ main {
 }
 
 .clas-grid-section {
-    padding: 40px 0;
-    background: #fff;
+    background-color: #fdfdfd; 
+    background-image: radial-gradient(#e5e5e5 0.5px, transparent 0.5px);
+    background-size: 30px 30px;
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .clas-grid {
@@ -91,24 +90,10 @@ main {
     text-align: center;
 }
 
-.clas-id-badge {
-    background: rgba(255,255,255,0.2);
-    padding: 5px 12px;
-    border-radius: 15px;
-    font-size: 0.8em;
-    width: fit-content;
-}
-
 .clas-title {
     font-size: 1.3em; 
     font-weight: 700;
     margin: 8px 0 4px 0;
-}
-
-.clas-id-info {
-    font-size: 0.85em;
-    opacity: 0.9;
-    margin: 0 0 12px 0;
 }
 
 .clas-email {
