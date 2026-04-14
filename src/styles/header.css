@@ -122,3 +122,10 @@ body {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color);
 }
+
+
+@media (max-width: 900px) {
+    .cen-norte span {
+        display: none;
+    }
+}

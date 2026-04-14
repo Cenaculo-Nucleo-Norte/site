@@ -366,7 +366,7 @@
 }
 
 /* Responsividade */
-@media (max-width: 900px) {
+@media (max-width: 845px) {
     .depts-preview {
         grid-template-columns: 1fr;
         grid-template-areas:
