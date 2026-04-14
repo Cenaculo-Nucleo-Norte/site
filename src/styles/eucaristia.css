@@ -81,6 +81,12 @@
     overflow: hidden;
 }
 
+.word-refrao {
+    font-weight: 600;
+    color: #1a1a1a !important;
+    font-style: italic;
+}
+
 .momento hr {
     border: none;
     border-top: 1px dashed #ddd;
