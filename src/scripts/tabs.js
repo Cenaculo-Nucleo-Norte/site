@@ -22,7 +22,7 @@ function show(contentId, element) {
 // Handle initial state on page load
 document.addEventListener('DOMContentLoaded', () => {
     // Set the first tab as active by default (optional)
-    const firstTab = document.querySelector('.tabs button');
+    const firstTab = document.querySelector('.tabs .button-horario');
     if (firstTab) {
         // This assumes your onclick looks like: show('home', this)
         firstTab.click(); 

@@ -39,9 +39,9 @@
 
         <main>
             <div class="tabs">
-                <button onclick="show('ep', this)">EP Atual</button>
-                <button onclick="show('horario', this)">Horário</button>
-                <button onclick="show('musicas', this)">Eucaristia</button>
+                <button class="button-ep" onclick="show('ep', this)">EP Atual</button>
+                <button class="button-horario" onclick="show('horario', this)">Horário</button>
+                <button class="button-musicas" onclick="show('musicas', this)">Eucaristia</button>
             </div>
 
             <div id="ep" class="container-main">
@@ -49,9 +49,66 @@
                     <h2>Equipa Projeto Ciclo XV</h2>
                 </div>
             </div>
-            <div id="horario" class="container-main"> 
+            <div id="horario" class="container-main">  
                 <div class="horario-content">
                     <h2>Horário Cenáculo</h2>
+
+                    <section class="dia-agenda">
+                        <div class="dia-header">
+                            <i class="fa fa-calendar-check-o"></i>
+                            <h3>Sexta-feira</h3>
+                        </div>
+                        <div class="item-horario">
+                            <span class="hora">21:00</span>
+                            <span class="atividade">Acolhimento e Check-in</span>
+                        </div>
+                        <div class="item-horario">
+                            <span class="hora">22:30</span>
+                            <span class="atividade">Sessão de Abertura</span>
+                        </div>
+                    </section>
+
+                    <section class="dia-agenda">
+                        <div class="dia-header">
+                            <i class="fa fa-calendar-check-o"></i>
+                            <h3>Sábado</h3>
+                        </div>
+                        <div class="item-horario">
+                            <span class="hora">08:30</span>
+                            <span class="atividade">Alvorada e Pequeno-almoço</span>
+                        </div>
+                        <div class="item-horario destaque">
+                            <span class="hora">10:00</span>
+                            <span class="atividade">Trabalhos de Grupo</span>
+                        </div>
+                        <div class="item-horario">
+                            <span class="hora">13:00</span>
+                            <span class="atividade">Almoço</span>
+                        </div>
+                        <div class="item-horario destaque">
+                            <span class="hora">21:30</span>
+                            <span class="atividade">Fogo de Conselho / Convívio</span>
+                        </div>
+                    </section>
+
+                    <section class="dia-agenda">
+                        <div class="dia-header">
+                            <i class="fa fa-calendar-check-o"></i>
+                            <h3>Domingo</h3>
+                        </div>
+                        <div class="item-horario">
+                            <span class="hora">09:00</span>
+                            <span class="atividade">Oração da Manhã</span>
+                        </div>
+                        <div class="item-horario destaque">
+                            <span class="hora">11:30</span>
+                            <span class="atividade">Eucaristia</span>
+                        </div>
+                        <div class="item-horario">
+                            <span class="hora">15:00</span>
+                            <span class="atividade">Sessão de Encerramento</span>
+                        </div>
+                    </section>
                 </div>
             </div>
     
