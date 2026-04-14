@@ -234,26 +234,20 @@
 
 .structure-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin-top: 40px;
 }
 
 .structure-card {
     background: #ffffff;
-    padding: 30px;
+    padding: 35px;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    border-top: 4px solid var(--primary-color);
-    text-align: left;
     transition: all 0.3s ease;
+    text-align: center;
 }
-
-.structure-card.local { border-top-color: var(--forum-color); }
-.structure-card.nacional { border-top-color: var(--coord-color); }
-.structure-card.representante { border-top-color: var(--anim-color); }
-.structure-card.equipa { border-top-color: var(--log-color); }
 
 .structure-card h3 {
     color: var(--text-dark);
@@ -299,27 +293,30 @@
 
 .depts-preview {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "coord coord coord coord"
+        "anim coms forum log";
     gap: 20px;
     margin-top: 40px;
 }
 
 .dept-preview {
     background: #ffffff;
-    padding: 35px 20px;
+    padding: 35px;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 0.08);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    text-align: center;
     transition: all 0.3s ease;
+    text-align: center;
     border-top: 6px solid #ccc;
 }
 
-.dept-preview.coord { border-top-color: var(--coord-color); }
-.dept-preview.forum { border-top-color: var(--forum-color); }
-.dept-preview.anim { border-top-color: var(--anim-color); }
-.dept-preview.coms { border-top-color: var(--coms-color); }
-.dept-preview.log { border-top-color: var(--log-color); }
+.dept-preview.coord { grid-area: coord; border-top-color: var(--coord-color); }
+.dept-preview.forum { grid-area: forum; border-top-color: var(--forum-color); }
+.dept-preview.anim { grid-area: anim; border-top-color: var(--anim-color); }
+.dept-preview.coms { grid-area: coms; border-top-color: var(--coms-color); }
+.dept-preview.log { grid-area: log; border-top-color: var(--log-color); }
 
 .dept-preview i {
     font-size: 2.5rem;
@@ -383,7 +380,6 @@
     box-shadow: 0 8px 20px rgba(192, 34, 46, 0.3);
 }
 
-/* CTA Section */
 #cta {
     padding: 60px 20px 40px;
 }
@@ -454,6 +450,18 @@
 }
 
 /* Responsividade */
+@media (max-width: 900px) {
+    .depts-preview {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "coord"
+            "anim"
+            "coms"
+            "forum"
+            "log";
+    }
+}
+
 @media (max-width: 768px) {
     #cenaculo-intro h2,
     #o-que-e h2,
@@ -462,6 +470,10 @@
     #estrutura h2,
     #departamentos-preview h2 {
         font-size: 1.8rem;
+    }
+
+    .structure-cards {
+        grid-template-columns: 1fr;
     }
 
     .info-card,
