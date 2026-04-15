@@ -1,3 +1,17 @@
+:root {
+    --coord-color: #c0222e;
+    --anim-color: #f39c12;
+    --coms-color: #9b59b6;
+    --forum-color: #3498db;
+    --log-color: #2ecc71;
+    --primary-color: #c0222e;
+    --primary-hover: #a01d27;
+    --text-dark: #1a1a1a;
+    --text-light: #666;
+    --border-color: #e0e0e0;
+}
+
+/* ===== BACKGROUND ===== */
 #ep {
     background-color: #fdfdfd; 
     background-image: radial-gradient(#e5e5e5 0.5px, transparent 0.5px);
@@ -6,12 +20,14 @@
     animation: fadeIn 0.5s ease-in-out;
 }
 
+/* ===== CONTAINER ===== */
 .ep-content {
-    max-width: 850px;
+    max-width: 1100px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ===== TITLE ===== */
 .ep-content h2 {
     text-align: center;
     color: var(--text-dark);
@@ -32,24 +48,113 @@
     border-radius: 2px;
 }
 
+/* ===== GRID GERAL ===== */
 .photos {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
 }
 
+/* ===== CADA SECÇÃO ===== */
 .ep-photos {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* TITULOS */
+.ep-photos h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-dark);
+}
+
+/* ===== WRAPPER DOS MEMBROS ===== */
+.members {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* responsivo */
+    justify-content: center;
     gap: 40px;
+}
+
+/* ===== CADA PESSOA ===== */
+.dept-combo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 220px;
+}
+
+/* ===== IMAGEM ===== */
+.ep-image {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== CARD TEXTO ===== */
+.dept-text {
+    background: #ffffff;
+    margin-top: -25px;
+    padding: 12px 18px;
+    border-radius: 15px;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.dept-text h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.dept-text p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* ===== OBS + EMBAIXADOR ===== */
+.obs-emb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.obs-emb .members {
     justify-content: center;
 }
 
-.ep-image {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* ===== ANIMAÇÃO ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+    .members {
+        gap: 25px;
+    }
+
+    .ep-image {
+        max-width: 180px;
+    }
+
+    .dept-text {
+        padding: 10px 15px;
+    }
 }
