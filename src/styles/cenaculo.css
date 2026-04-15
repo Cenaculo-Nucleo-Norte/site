@@ -57,20 +57,6 @@ body {
     padding: 80px 40px 60px;
 }
 
-.hero-bg-text {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    font-size: clamp(120px, 20vw, 280px);
-    font-weight: 800;
-    color: rgba(192, 34, 46, 0.03);
-    line-height: 1;
-    pointer-events: none;
-    user-select: none;
-    white-space: nowrap;
-    letter-spacing: -5px;
-}
-
 .hero-inner {
     max-width: 1100px;
     margin: 0 auto;
@@ -197,20 +183,29 @@ body {
 .cenaculo-content h2 {
     text-align: center;
     color: var(--text-dark);
-    font-weight: 800;
-    font-size: 2.4rem;
+    font-weight: 700;
+    font-size: 2.2rem;
     letter-spacing: -1px;
-    margin-bottom: 50px;
     position: relative;
 }
+
+.cenaculo-content p {
+    text-align: center;
+    color: var(--text-light);
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    position: relative;
+}
+
 
 .cenaculo-content h2::after {
     content: '';
     display: block;
     width: 60px;
     height: 4px;
-    background: var(--red);
-    margin: 15px auto 0;
+    background: var(--primary-color);
+    margin: 15px auto 30px;
     border-radius: 2px;
 }
 
@@ -245,16 +240,6 @@ body {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.objective-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
-    background: var(--white);
-}
-
-.objective-card:hover::before {
-    transform: scaleX(1);
 }
 
 .objective-card i {
@@ -304,12 +289,6 @@ body {
     border-radius: 20px;
     padding: 40px;
     transition: all 0.3s ease;
-}
-
-.structure-card:hover {
-    border-color: rgba(192, 34, 46, 0.3);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-    transform: translateY(-4px);
 }
 
 .structure-card h3 {
@@ -371,11 +350,6 @@ body {
     border-radius: 0 0 20px 20px;
 }
 
-.dept-preview:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-}
-
 /* Cores e Layouts Específicos */
 .dept-preview.coord { grid-area: coord; flex-direction: row; display: flex; align-items: center; gap: 24px; text-align: left; }
 .dept-preview.coord::after { background: var(--coord-color); }
@@ -399,8 +373,6 @@ body {
     margin-bottom: 16px;
     transition: transform 0.3s ease;
 }
-
-.dept-preview:hover i { transform: scale(1.1); }
 
 /* Backgrounds suaves para os ícones */
 .dept-preview.coord i { background: rgba(192,34,46,0.1); color: var(--coord-color); margin-bottom: 0; }
@@ -473,7 +445,7 @@ body {
 }
 
 /* Botões Globais */
-.btn-solid, .btn-primary {
+.btn-solid {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -487,7 +459,50 @@ body {
     transition: all 0.3s ease;
 }
 
-.btn-solid:hover, .btn-primary:hover {
+.btn-depts {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    padding: 14px 32px;
+    border-radius: 8px;
+    border: 1.8px solid rgba(0, 0, 0, 0.7);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--white);
+    color: var(--red);
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: none;
+    color: white;
+    transform: translateY(-2px);
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn-depts:hover {
+    background: black;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn-solid:hover {
     background: var(--red-dark);
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(192,34,46,0.3);
