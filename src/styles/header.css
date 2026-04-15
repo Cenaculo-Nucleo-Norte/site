@@ -52,6 +52,7 @@ body {
     align-items: center;
     padding: 0 1rem;
     max-width: 1400px;
+    position: relative;
 }
 
 .container {
@@ -120,9 +121,47 @@ body {
     border-bottom: 2px solid var(--primary-color);
 }
 
+.menu-toggle {
+    display: none;
+}
 
 @media (max-width: 900px) {
     .cen-norte span {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--text-dark);
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        width: 100%;
+        background: white;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        padding: 10px 0;
+        gap: 0;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
     }
 }
