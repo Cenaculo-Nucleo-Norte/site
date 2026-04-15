@@ -92,8 +92,23 @@ footer {
     margin-left: 5px;    
 }
 
+.footer-text br {
+    display: none;
+}
+
 .footer-text {
     font-size: 13px;
     color: #888;
     margin-top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-text {
+        text-align: center;
+    }
+
+    .footer-text br {
+        display: block;
+    }
 }
