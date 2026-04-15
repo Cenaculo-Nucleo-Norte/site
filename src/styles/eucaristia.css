@@ -1,12 +1,12 @@
 #musicas {
     background-color: var(--bg); 
-    background-size: 35px 35px;
-    padding: 60px 20px;
+    background-size: 25px 25px;
+    padding: 30px 15px;
     animation: fadeIn 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .eucaristia-content {
-    max-width: 850px;
+    max-width: 750px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
 }
@@ -14,21 +14,21 @@
 .eucaristia-content h2 {
     text-align: center;
     color: var(--text-dark);
-    font-weight: 700;
-    font-size: 2.2rem;
-    margin-bottom: 50px;
-    letter-spacing: -1px;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+    letter-spacing: -0.5px;
     position: relative;
 }
 
 .eucaristia-content h2::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 45px;
     height: 4px;
     background: var(--primary-color);
-    margin: 15px auto 0;
-    border-radius: 2px;
+    margin: 12px auto 0;
+    border-radius: 4px;
 }
 
 .momento {
