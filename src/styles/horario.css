@@ -1,13 +1,13 @@
 #horario {
-    background-color: #fdfdfd; 
-    background-image: radial-gradient(#e5e5e5 0.5px, transparent 0.5px);
-    background-size: 30px 30px;
-    padding: 40px 20px;
-    animation: fadeIn 0.5s ease-in-out;
+    background-color: var(--bg); 
+    background-image: radial-gradient(var(--border) 1px, transparent 1px);
+    background-size: 25px 25px;
+    padding: 30px 15px;
+    animation: fadeIn 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .horario-content {
-    max-width: 850px;
+    max-width: 750px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
 }
@@ -15,61 +15,66 @@
 .horario-content h2 {
     text-align: center;
     color: var(--text-dark);
-    font-weight: 700;
-    font-size: 2.2rem;
-    margin-bottom: 50px;
-    letter-spacing: -1px;
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+    letter-spacing: -0.5px;
     position: relative;
 }
 
 .horario-content h2::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 45px;
     height: 4px;
     background: var(--primary-color);
-    margin: 15px auto 0;
-    border-radius: 2px;
+    margin: 12px auto 0;
+    border-radius: 4px;
 }
 
 .dia-agenda {
     background: #ffffff;
-    margin-bottom: 30px;
-    padding: 35px;
+    margin-bottom: 25px;
+    padding: 25px;
     border-radius: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
     transition: transform 0.3s ease;
 }
 
 .dia-header {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid rgba(192, 34, 46, 0.1);
+    gap: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(192, 34, 46, 0.08);
 }
 
 .dia-header i {
     color: var(--primary-color);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    background: rgba(192, 34, 46, 0.06);
+    padding: 8px;
+    border-radius: 10px;
 }
 
 .dia-header h3 {
-    color: var(--primary-color);
-    font-size: 1.2rem;
+    color: var(--text-dark);
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-weight: 800;
     margin: 0;
 }
 
 .item-horario {
     display: flex;
     align-items: center;
-    padding: 18px 10px;
-    border-bottom: 1px dashed #eee;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    transition: all 0.2s ease;
+    border-radius: 10px;
 }
 
 .item-horario:last-child {
@@ -77,58 +82,40 @@
 }
 
 .item-horario .hora {
-    min-width: 90px;
-    font-weight: 700;
+    min-width: 80px;
+    font-weight: 800;
     color: var(--primary-color);
-    font-size: 1.1rem;
-    position: relative;
+    font-size: 0.95rem;
 }
 
 .item-horario .atividade {
-    color: #444;
-    font-size: 1.05rem;
+    color: var(--text-dark);
+    font-size: 0.95rem;
     font-weight: 500;
     padding-left: 15px;
 }
 
 .item-horario.destaque {
-    background: rgba(192, 34, 46, 0.04);
+    background: rgba(192, 34, 46, 0.05);
     border-radius: 12px;
-    margin: 5px 0;
-    border-bottom: none;
+    margin: 6px 0;
+    border: 1px solid rgba(192, 34, 46, 0.08);
 }
 
 .item-horario.destaque .atividade {
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--primary-color);
 }
 
-/* Responsividade para ecrãs pequenos */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 768px) {
-    .horario-content h2 {
-        font-size: 1.8rem;
-    }
-    
-    .dia-agenda {
-        padding: 20px;
-    }
-    
-    .item-horario {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-    }
-    
-    .item-horario .hora {
-        font-size: 0.9rem;
-        background: var(--primary-color);
-        color: white;
-        padding: 2px 8px;
-        border-radius: 4px;
-        min-width: auto;
-    }
-    
-    .item-horario .atividade {
-        padding-left: 0;
-    }
+    .horario-content h2 { font-size: 1.5rem; }
+    .dia-agenda { padding: 18px; }
+    .item-horario { padding: 8px 5px; }
+    .item-horario .hora { min-width: 70px; font-size: 0.85rem; }
+    .item-horario .atividade { font-size: 0.85rem; padding-left: 10px; }
 }
