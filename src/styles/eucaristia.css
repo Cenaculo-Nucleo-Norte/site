@@ -1,9 +1,8 @@
 #musicas {
-    background-color: #fdfdfd; 
-    background-image: radial-gradient(#e5e5e5 0.5px, transparent 0.5px);
-    background-size: 30px 30px;
-    padding: 40px 20px;
-    animation: fadeIn 0.5s ease-in-out;
+    background-color: var(--bg); 
+    background-size: 35px 35px;
+    padding: 60px 20px;
+    animation: fadeIn 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .eucaristia-content {
