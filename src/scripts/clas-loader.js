@@ -28,6 +28,7 @@ function renderClas(clas) {
                         <div>
                             <h3 class="clas-title">Agrup ${clan.id} - ${clan.title}</h3>
                         </div>
+                        <span class="line-break"></span>
                         <a href="mailto:${clan.email}" class="clas-email">
                             <i class="fa fa-envelope"></i>
                             ${clan.email}

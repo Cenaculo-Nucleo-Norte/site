@@ -106,7 +106,13 @@ body {
     transform: rotateY(180deg);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+}
+
+.line-break {
+    display: block;
+    height: 10px; 
 }
 
 .clas-label {
