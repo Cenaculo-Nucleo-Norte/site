@@ -5,17 +5,17 @@
     --forum-color: #3498db;
     --log-color: #2ecc71;
     --primary-color: #c0222e;
-    --primary-hover: #a01d27;
     --text-dark: #1a1a1a;
     --text-light: #666;
-    --border-color: #e0e0e0;
+    --border-color: rgba(0,0,0,0.08);
+    --bg: #f7f7f9;
 }
 
 .departamentos-page {
-    background-color: #fdfdfd; 
-    background-image: radial-gradient(#e5e5e5 0.5px, transparent 0.5px);
-    background-size: 30px 30px;
-    animation: fadeIn 0.5s ease-in-out;
+    background-color: var(--bg); 
+    background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+    background-size: 25px 25px;
+    animation: fadeIn 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 #depts {
@@ -23,7 +23,7 @@
 }
 
 .depts-content {
-    max-width: 850px;
+    max-width: 800px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
 }
@@ -31,116 +31,147 @@
 .depts-content h2 {
     text-align: center;
     color: var(--text-dark);
-    font-weight: 700;
-    font-size: 2.2rem;
-    letter-spacing: -1px;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .depts-content p {
     text-align: center;
     color: var(--text-light);
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1rem;
-    letter-spacing: -1px;
-    margin-top: 15px;
     position: relative;
 }
 
 .depts-content h2::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 50px;
     height: 4px;
     background: var(--primary-color);
     margin: 15px auto 0;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .dept-detail {
     background: #ffffff;
-    margin-bottom: 40px;
-    padding: 40px;
-    border-radius: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    gap: 30px;
-    border-left: 15px solid #ccc;
-    transition: transform 0.3s ease;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
-.coord { border-left-color: var(--coord-color); }
-.anim { border-left-color: var(--anim-color); }
-.coms { border-left-color: var(--coms-color); }
-.forum { border-left-color: var(--forum-color); }
-.log { border-left-color: var(--log-color); }
+.dept-detail:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+.dept-detail::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+    width: 8px;
+    border-radius: 24px 0 0 24px;
+}
+
+.coord::before { background: var(--coord-color); }
+.anim::before { background: var(--anim-color); }
+.coms::before { background: var(--coms-color); }
+.forum::before { background: var(--forum-color); }
+.log::before { background: var(--log-color); }
 
 .dept-header {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-bottom: 25px;
 }
 
 .dept-header i {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 1.8rem;
+    width: 60px; height: 60px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
 }
 
 .dept-header h2 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 800;
     margin: 0;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .responsabilidades h3 {
-    color: #888;
+    color: var(--text-light);
     text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 2px;
-    margin-bottom: 0px;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    font-weight: 700;
 }
 
 .responsabilidades p {
-    margin-top: 7px;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .task-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 15px;
     margin-top: 30px;
 }
 
 .task-item {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 15px;
-    font-size: 0.95rem;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 16px;
+    font-size: 0.9rem;
     line-height: 1.5;
-    border: 1px solid #eee;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+    transition: all 0.2s ease;
+}
+
+.task-item:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
 }
 
 .task-item strong {
     display: block;
-    color: #333;
+    color: var(--text-dark);
     margin-bottom: 5px;
     font-size: 1rem;
+    font-weight: 800;
 }
 
+.coord .dept-header i { color: var(--coord-color); background: rgba(192,34,46,0.08); }
+.anim .dept-header i { color: var(--anim-color); background: rgba(243,156,18,0.08); }
+.coms .dept-header i { color: var(--coms-color); background: rgba(155,89,182,0.08); }
+.forum .dept-header i { color: var(--forum-color); background: rgba(52,152,219,0.08); }
+.log .dept-header i { color: var(--log-color); background: rgba(46,204,113,0.08); }
+
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
+    from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
-    .dept-detail {
-        padding: 25px;
-        border-left-width: 8px;
-    }
-    .dept-header h2 {
-        font-size: 1.5rem;
-    }
+    .dept-detail { padding: 20px; }
+    .dept-header { gap: 12px; }
+    .dept-header h2 { font-size: 1.3rem; }
+    .dept-header i { width: 50px; height: 50px; font-size: 1.5rem; }
+    .task-grid { grid-template-columns: 1fr; }
 }
