@@ -191,7 +191,7 @@ body {
 
 /* ── OBJETIVOS ── */
 #objetivos {
-    padding: 100px 40px;
+    padding: 80px 40px;
     background: var(--white);
 }
 
@@ -222,27 +222,31 @@ body {
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.objective-card i {
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
-    background: var(--red-light);
+.objective-icon {
     display: inline-flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
-    font-size: 1.5rem;
-    color: var(--red);
+    gap: 12px;
 }
 
-.objective-card h4 {
-    font-size: 1rem;
+.objective-card h4  {
+    font-size: 1.2rem;
     font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     color: var(--ink);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
+
+.objective-card h4 i {
+    color: var(--red);
+    font-size: 1.4rem;
+    background: var(--red-light);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 
 .objective-card p {
     font-size: 0.95rem;
@@ -253,7 +257,7 @@ body {
 
 /* ── ESTRUTURA (Light Version) ── */
 #estrutura {
-    padding: 100px 40px;
+    padding: 80px 40px;
     background: var(--mist);
 }
 
@@ -298,7 +302,7 @@ body {
 
 /* ── DEPARTAMENTOS ── */
 #departamentos-preview {
-    padding: 100px 40px;
+    padding: 80px 40px;
     background: var(--white);
 }
 
