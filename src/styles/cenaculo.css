@@ -41,7 +41,7 @@ body {
 .cenaculo-content {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 
 /* ── HERO SECTION ── */
@@ -54,7 +54,7 @@ body {
     background: var(--mist);
     background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
     background-size: 30px 30px;
-    padding: 80px 40px 60px;
+    padding: 40px;
 }
 
 .hero-inner {
@@ -84,14 +84,6 @@ body {
     margin-bottom: 24px;
 }
 
-.hero-eyebrow span {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--red);
-    display: inline-block;
-}
-
 .hero-h1 {
     font-size: clamp(48px, 6vw, 84px);
     font-weight: 800;
@@ -112,7 +104,7 @@ body {
     color: var(--slate);
     line-height: 1.7;
     max-width: 500px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-weight: 400;
 }
 
@@ -124,59 +116,47 @@ body {
 }
 
 .lema-row {
-    display: flex;
-    gap: 12px;
-    margin-top: 40px;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.lema-pill {
-    padding: 6px 16px;
-    border-radius: 999px;
-    border: 1px solid var(--border);
-    background: var(--white);
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--slate);
-    letter-spacing: 0.03em;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+.lema-hero {
+    font-size: clamp(13px, 1.4vw, 18px);
+    font-weight: 800; /* mais pesado */
+    color: var(--ink);
+    padding-left: 14px;
+    position: relative;
+    line-height: 1.2;
+    letter-spacing: 0.03em; 
+    margin-bottom: 20px;
+}
+
+.lema-hero::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 3px;
+    background: var(--red);
+    border-radius: 2px;
 }
 
 .hero-badge {
-    width: 220px;
-    height: 220px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
-    background: var(--white);
-    border: 1px solid var(--border);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.06);
-    animation: gentle-float 6s ease-in-out infinite;
 }
 
 .hero-badge img {
-    width: 70px;
+    width: 100%;
     height: auto;
     margin-bottom: 15px;
-}
-
-.hero-badge-label {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--ink);
-}
-
-.hero-badge-sub {
-    font-size: 0.75rem;
-    color: var(--red);
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-top: 6px;
 }
 
 /* ── SHARED SECTION TITLES ── */
