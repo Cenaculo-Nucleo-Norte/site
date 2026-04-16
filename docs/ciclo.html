@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/tabs.css">
-        <link rel="stylesheet" href="styles/eucaristia.css">
+        <link rel="stylesheet" href="styles/musicas.css">
         <link rel="stylesheet" href="styles/horario.css">
         <link rel="stylesheet" href="styles/ep.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,152 +42,12 @@
 
         <main>
             <div class="tabs">
-                <button class="button-ep" onclick="show('ep', this)">EP Atual</button>
                 <button class="button-horario" onclick="show('horario', this)">Horário</button>
                 <button class="button-musicas" onclick="show('musicas', this)">Eucaristia</button>
+                <button class="button-hino" onclick="show('hino', this)">Hino</button>
+                <button class="button-ep" onclick="show('ep', this)">EP Atual</button>
             </div>
 
-            <div id="ep" class="container-main">
-                <div class="ep-content">
-                    <h2>Equipa Projeto Ciclo XV</h2>
-
-                    <div class="photos">
-                        <section class="ep-photos coordenacao">
-                            <h3>Coordenação</h3>
-                            <div class="members">
-                                <div class="dept-combo">
-                                    <img src="images/ep/Inês.JPG" alt="Coordenadora" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Inês Ferreira</h4>
-                                        <p>1283 - Alvarelhos</p>
-                                    </div>
-                                </div>
-                                <div class="dept-combo">
-                                    <img src="images/ep/Ricardo.JPG" alt="Coordenador" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Ricardo Almeida</h4>
-                                        <p>628 - Santo Tirso</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="ep-photos animacao">
-                            <h3>Animação</h3>
-                            <div class="members">
-                                <div class="dept-combo">
-                                    <img src="images/ep/Mariana.jpg" alt="Animação1" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Mariana Moreira</h4>
-                                        <p>245 - Vilarinho</p>
-                                    </div>
-                                </div>
-                                <div class="dept-combo">
-                                <img src="images/ep/Manel.jpg" alt="Animação2" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Manuel Escaleira</h4>
-                                        <p>447 - Santiago de Bougado</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="ep-photos comunicacao">
-                            <h3>Comunicação</h3>
-                            <div class="members">
-                                <div class="dept-combo">
-                                    <img src="images/ep/Luísa.jpg" alt="Comunicação1" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Ana Luísa Costa</h4>
-                                        <p>435 - Santa Eulália</p>
-                                    </div>
-                                </div>
-                                <div class="dept-combo">
-                                    <img src="images/ep/Joana.JPG" alt="Comunicação2" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Joana Carvalhal</h4>
-                                        <p>447 - Santiago de Bougado</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="ep-photos forum">
-                            <h3>Fórum</h3>
-                            <div class="members">
-                                <div class="dept-combo">
-                                    <img src="images/ep/Guida.jpg" alt="Fórum1" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Margarida Silva</h4>
-                                        <p>503 - Fontiscos</p>
-                                    </div>
-                                </div>
-                                <div class="dept-combo">
-                                    <img src="images/ep/Tomás.jpg" alt="Fórum2" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Tomás Morais</h4>
-                                        <p>447 - Santiago de Bougado</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="ep-photos logistica">
-                            <h3>Logística</h3>
-                            <div class="members">
-                                <div class="dept-combo">
-                                    <img src="images/ep/Bea.JPG" alt="Logística1" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Beatriz Machado</h4>
-                                        <p>503 - Fontiscos</p>
-                                    </div>
-                                </div>
-                                <div class="dept-combo">
-                                    <img src="images/ep/Maria.JPG" alt="Logística2" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Maria Fonseca</h4>
-                                        <p>628 - Santo Tirso</p>
-                                    </div>
-                                </div>
-                                <div class="dept-combo">
-                                    <img src="images/ep/Margarida.JPG" alt="Logística3" class="ep-image">
-                                    <div class="dept-text">
-                                        <h4>Margarida Sousa</h4>
-                                        <p>399 - Rebordões</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section class="ep-photos obs-emb">
-                            <div class="obs">
-                                <h3>Observadora</h3>
-                                <div class="members">
-                                    <div class="dept-combo">
-                                        <img src="images/ep/Ana.png" alt="Observadora" class="ep-image">
-                                        <div class="dept-text">
-                                            <h4>Ana Fernandes</h4>
-                                            <p>503 - Fontiscos</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="members">
-                                <div class="emb">
-                                    <h3>Embaixador</h3>
-                                    <div class="dept-combo">
-                                        <img src="images/ep/Henrique.jpg" alt="Embaixador" class="ep-image">
-                                        <div class="dept-text">
-                                            <h4>Henrique Silva</h4>
-                                            <p>447 - Santiago de Bougado</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
             <div id="horario" class="container-main">  
                 <div class="horario-content">
                     <h2>Horário Cenáculo</h2>
@@ -362,7 +222,7 @@
                     </section>
                 </div>
             </div>
-    
+
             <div id="musicas" class="container-main">
                 <div class="eucaristia-content">
                     <h2>Cânticos da Eucaristia</h2>
@@ -572,6 +432,174 @@
                         A chama acende cada um de nós<br>
                         Com liberdade...</p>
                     </section>
+                </div>
+            </div>
+
+            <div id="hino" class="container-main">
+                <div class="hino-content">
+                    <h2>Hino do Cenáculo</h2>
+
+                    <section class="momento">
+                        <h3>Homem Novo Serás!</h3>
+                        <p>Um Homem Novo vai nascer<br>
+                        Neste dia onde tudo vai mudar<br>
+                        Tens um mundo pra transformar<br>
+                        E B.P. para te orientar</p>
+                        <p>Nas costas tens a mochila<br>
+                        Cheia de segredos pra desvendar<br>
+                        Na partilha vais viver<br>
+                        Novas histórias terás para contar</p>
+                        <p class="refrao">Vive, partilha e avança<br>
+                        Sem medo do amanhã<br>
+                        Segue Cristo e B.P.<br>
+                        E um Homem Novo serás (BIS)<br>
+                        <p>Nas tuas mãos tens o mundo<br>
+                        Tens muito para ensinar<br>
+                        Há um novo rumo a seguir<br>
+                        Novos sonhos para alcançar</p>
+                    </section>
+                </div>
+            </div>
+
+            <div id="ep" class="container-main">
+                <div class="ep-content">
+                    <h2>Equipa Projeto Ciclo XV</h2>
+
+                    <div class="photos">
+                        <section class="ep-photos coordenacao">
+                            <h3>Coordenação</h3>
+                            <div class="members">
+                                <div class="dept-combo">
+                                    <img src="images/ep/Inês.JPG" alt="Coordenadora" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Inês Ferreira</h4>
+                                        <p>1283 - Alvarelhos</p>
+                                    </div>
+                                </div>
+                                <div class="dept-combo">
+                                    <img src="images/ep/Ricardo.JPG" alt="Coordenador" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Ricardo Almeida</h4>
+                                        <p>628 - Santo Tirso</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="ep-photos animacao">
+                            <h3>Animação</h3>
+                            <div class="members">
+                                <div class="dept-combo">
+                                    <img src="images/ep/Mariana.jpg" alt="Animação1" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Mariana Moreira</h4>
+                                        <p>245 - Vilarinho</p>
+                                    </div>
+                                </div>
+                                <div class="dept-combo">
+                                <img src="images/ep/Manel.jpg" alt="Animação2" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Manuel Escaleira</h4>
+                                        <p>447 - Santiago de Bougado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="ep-photos comunicacao">
+                            <h3>Comunicação</h3>
+                            <div class="members">
+                                <div class="dept-combo">
+                                    <img src="images/ep/Luísa.jpg" alt="Comunicação1" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Ana Luísa Costa</h4>
+                                        <p>435 - Santa Eulália</p>
+                                    </div>
+                                </div>
+                                <div class="dept-combo">
+                                    <img src="images/ep/Joana.JPG" alt="Comunicação2" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Joana Carvalhal</h4>
+                                        <p>447 - Santiago de Bougado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="ep-photos forum">
+                            <h3>Fórum</h3>
+                            <div class="members">
+                                <div class="dept-combo">
+                                    <img src="images/ep/Guida.jpg" alt="Fórum1" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Margarida Silva</h4>
+                                        <p>503 - Fontiscos</p>
+                                    </div>
+                                </div>
+                                <div class="dept-combo">
+                                    <img src="images/ep/Tomás.jpg" alt="Fórum2" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Tomás Morais</h4>
+                                        <p>447 - Santiago de Bougado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        
+                        <section class="ep-photos logistica">
+                            <h3>Logística</h3>
+                            <div class="members">
+                                <div class="dept-combo">
+                                    <img src="images/ep/Bea.JPG" alt="Logística1" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Beatriz Machado</h4>
+                                        <p>503 - Fontiscos</p>
+                                    </div>
+                                </div>
+                                <div class="dept-combo">
+                                    <img src="images/ep/Maria.JPG" alt="Logística2" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Maria Fonseca</h4>
+                                        <p>628 - Santo Tirso</p>
+                                    </div>
+                                </div>
+                                <div class="dept-combo">
+                                    <img src="images/ep/Margarida.JPG" alt="Logística3" class="ep-image">
+                                    <div class="dept-text">
+                                        <h4>Margarida Sousa</h4>
+                                        <p>399 - Rebordões</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="ep-photos obs-emb">
+                            <div class="obs">
+                                <h3>Observadora</h3>
+                                <div class="members">
+                                    <div class="dept-combo">
+                                        <img src="images/ep/Ana.png" alt="Observadora" class="ep-image">
+                                        <div class="dept-text">
+                                            <h4>Ana Fernandes</h4>
+                                            <p>503 - Fontiscos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="members">
+                                <div class="emb">
+                                    <h3>Embaixador</h3>
+                                    <div class="dept-combo">
+                                        <img src="images/ep/Henrique.jpg" alt="Embaixador" class="ep-image">
+                                        <div class="dept-text">
+                                            <h4>Henrique Silva</h4>
+                                            <p>447 - Santiago de Bougado</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
         </main>
