@@ -181,7 +181,7 @@
 
 @media (max-width: 768px) {
     #ep { padding: 50px 15px; }
-    .eucaristia-content h2 {
+    .ep-content h2 {
         font-size: 1.8rem;
     }
     .photos { gap: 60px; }
