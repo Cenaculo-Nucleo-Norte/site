@@ -1,6 +1,6 @@
 async function loadClas() {
     try {
-        const response = await fetch('../data/clas.json');
+        const response = await fetch('data/clas.json');
         const data = await response.json();
         renderClas(data.nodes);
     } catch (error) {
