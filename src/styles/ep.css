@@ -189,5 +189,5 @@
     .dept-text { padding: 15px; margin-top: -25px; border-radius: 16px; width: 95%; height: 90px; }
     .dept-text h4 { font-size: 1rem; }
     .dept-text p { font-size: 0.8rem; }
-    .obs-emb { flex-direction: column; gap: 50px; }
+    .obs-emb { flex-direction: column; gap: 50px; align-self: center;}
 }
